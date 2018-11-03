@@ -1,0 +1,72 @@
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.exe.config
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.exe
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.pdb
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.Design.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.LoginSplash.frmLogin.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.LoginSplash.frmSplash.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Dashboard.frmCashier.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmCheckPrice.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmCreditSales.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmPOSReport.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmPrintInvoice.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmSalesReturn.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmSeekResume.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.SettingsDebug.frmDebug.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.SettingsDebug.frmSettings.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Dashboard.frmManager.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Tab.frmPassword.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.exe.config
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.exe
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\RetailConnectPOS.pdb
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.Design.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\PagedList.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\PagedList.xml
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Dashboard.frmCashier.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Dashboard.frmManager.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.LoginSplash.frmLogin.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.LoginSplash.frmSplash.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmCheckPrice.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmCreditSales.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmPOSReport.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmPrintInvoice.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmSalesReturn.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Options.frmSeekResume.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Properties.Resources.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.SettingsDebug.frmDebug.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.SettingsDebug.frmSettings.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.Tab.frmPassword.resources
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.exe
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RetailConnectPOS.pdb
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RdlCompile.cache
+C:\Users\user\Desktop\RetailConnectPOS\RetailConnectPOS\obj\Debug\RdlCompile.compiled
