@@ -8,6 +8,7 @@ namespace RetailConnectPOS
 {
     static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace RetailConnectPOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginSplash.frmLogin());
+            Application.Run(new Dashboard.frmCashier());
         }
     }
 }

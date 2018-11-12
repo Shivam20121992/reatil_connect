@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PagedList;
+using System.Data.Entity;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace RetailConnectPOS.Dashboard
     {
@@ -26,7 +29,7 @@ namespace RetailConnectPOS.Dashboard
         public frmCashier()
             {            
             InitializeComponent();
-            timer1.Start();
+            timer1.Start();            
             }   
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -65,7 +68,7 @@ namespace RetailConnectPOS.Dashboard
 
                             }).ToList();
 
-            gridSKU.DataSource = List;
+            gridSKU.DataSource = List; 
             }
         private void btnAppClose_Click(object sender, EventArgs e)
             {
@@ -92,6 +95,14 @@ namespace RetailConnectPOS.Dashboard
                 {
                 MessageBox.Show("Sorry ! You don't have enough product in Item cart \n  Please Add to cart", "Yes or No", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 }
+            else
+                {
+
+                Pay pay = new Pay();
+                pay.Show();
+                this.Hide();
+                }            
+            db.SaveChanges();
 
             }
 
@@ -103,7 +114,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnPay_MouseLeave(object sender, EventArgs e)
             {
-            btnPay.BackColor = Color.Gold;
+            btnPay.BackColor = Color.DeepSkyBlue;
             btnPay.ForeColor = Color.Black;
             }
 
@@ -124,7 +135,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnCancelOrder_MouseLeave(object sender, EventArgs e)
             {
-            btnCancelOrder.BackColor = Color.Gold;
+            btnCancelOrder.BackColor = Color.DeepSkyBlue;
             btnCancelOrder.ForeColor = Color.Black;
             }
 
@@ -141,7 +152,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnNewOrder_MouseLeave(object sender, EventArgs e)
             {
-            btnNewOrder.BackColor = Color.Gold;
+            btnNewOrder.BackColor = Color.DeepSkyBlue;
             btnNewOrder.ForeColor = Color.Black;
             }
 
@@ -160,7 +171,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnSKU_MouseLeave(object sender, EventArgs e)
             {
-            btnSKU.BackColor = Color.Gold;
+            btnSKU.BackColor = Color.DeepSkyBlue;
             btnSKU.ForeColor = Color.Black;
             }
         private void btnSKUClose_Click(object sender, EventArgs e)
@@ -184,7 +195,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnPOSReport_MouseLeave(object sender, EventArgs e)
             {
-            btnPOSReport.BackColor = Color.Gold;
+            btnPOSReport.BackColor = Color.DeepSkyBlue;
             btnPOSReport.ForeColor = Color.Black;
             }
 
@@ -202,7 +213,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnCheckPrice_MouseLeave(object sender, EventArgs e)
             {
-            btnCheckPrice.BackColor = Color.Gold;
+            btnCheckPrice.BackColor = Color.DeepSkyBlue;
             btnCheckPrice.ForeColor = Color.Black;
             }
 
@@ -220,7 +231,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnSeekResume_MouseLeave(object sender, EventArgs e)
             {
-            btnSeekResume.BackColor = Color.Gold;
+            btnSeekResume.BackColor = Color.DeepSkyBlue;
             btnSeekResume.ForeColor = Color.Black;
             }
 
@@ -237,7 +248,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnOpenDrawer_MouseLeave(object sender, EventArgs e)
             {
-            btnOpenDrawer.BackColor = Color.Gold;
+            btnOpenDrawer.BackColor = Color.DeepSkyBlue;
             btnOpenDrawer.ForeColor = Color.Black;
             }
 
@@ -254,7 +265,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnPWP_MouseLeave(object sender, EventArgs e)
             {
-            btnPWP.BackColor = Color.Gold;
+            btnPWP.BackColor = Color.DeepSkyBlue;
             btnPWP.ForeColor = Color.Black;
             }
 
@@ -271,7 +282,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnCash_MouseLeave(object sender, EventArgs e)
             {
-            btnCash.BackColor = Color.Gold;
+            btnCash.BackColor = Color.DeepSkyBlue;
             btnCash.ForeColor = Color.Black;
             }
 
@@ -288,7 +299,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnChnagePrice_MouseLeave(object sender, EventArgs e)
             {
-            btnChnagePrice.BackColor = Color.Gold;
+            btnChnagePrice.BackColor = Color.DeepSkyBlue;
             btnChnagePrice.ForeColor = Color.Black;
             }
 
@@ -306,7 +317,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnCreditSales_MouseLeave(object sender, EventArgs e)
             {
-            btnCreditSales.BackColor = Color.Gold;
+            btnCreditSales.BackColor = Color.DeepSkyBlue;
             btnCreditSales.ForeColor = Color.Black;
             }
 
@@ -324,7 +335,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnReprintInvoice_MouseLeave(object sender, EventArgs e)
             {
-            btnReprintInvoice.BackColor = Color.Gold;
+            btnReprintInvoice.BackColor = Color.DeepSkyBlue;
             btnReprintInvoice.ForeColor = Color.Black;
             }
 
@@ -342,7 +353,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnSalesReturn_MouseLeave(object sender, EventArgs e)
             {
-            btnSalesReturn.BackColor = Color.Gold;
+            btnSalesReturn.BackColor = Color.DeepSkyBlue;
             btnSalesReturn.ForeColor = Color.Black;
             }
 
@@ -366,7 +377,7 @@ namespace RetailConnectPOS.Dashboard
 
         private void btnCancelItem_MouseLeave(object sender, EventArgs e)
             {
-            btnCancelItem.BackColor = Color.Gold;
+            btnCancelItem.BackColor = Color.DeepSkyBlue;
             btnCancelItem.ForeColor = Color.Black;
             }
 
@@ -460,13 +471,11 @@ namespace RetailConnectPOS.Dashboard
         private void txtBarcodeReaderBox_TextChanged(object sender, EventArgs e)
             {            
                 {
-
                 //if (txtBarcodeReaderBox.Text == "")
-                    //{
-                    //MessageBox.Show("Please Insert Items BarCode.");
-                    //}
+                //    {
+                //    MessageBox.Show("Please Insert Items BarCode.");
+                //    }
                 //else
-                    {
                     var List = (from a in db.STOCKs
                                 where a.PRDCODE == txtBarcodeReaderBox.Text
                                 select new
@@ -476,26 +485,25 @@ namespace RetailConnectPOS.Dashboard
                                     UnitPrice = a.PRICE,
                                     Quantity = txtQuantity.Text,
                                     }).SingleOrDefault();
-                    if (List != null)
+                if (List != null)
+                    {
+
+                    int n = Finditem(List.ProductCode);
+                    if (n == -1)  //If new item
                         {
 
-                        int n = Finditem(List.ProductCode);
-                        if (n == -1)  //If new item
-                            {
-
-                            double TotalAmountProduct = Convert.ToDouble(List.UnitPrice) * Convert.ToDouble(List.Quantity);
-                            gridItemMaster.Rows.Add(List.ProductCode, List.ProductName, List.UnitPrice, List.Quantity, TotalAmountProduct);
-                            }
-                        else
-                            {
-                            int QtyInc = Convert.ToInt32(gridItemMaster.Rows[n].Cells["Quantity"].Value);
-                            double UnitP = Convert.ToDouble(gridItemMaster.Rows[n].Cells["UnitPrice"].Value);
-                            gridItemMaster.Rows[n].Cells["Quantity"].Value = (QtyInc + 1);  //Qty Increase by MinOrderQty....as needed...
-                            gridItemMaster.Rows[n].Cells["Total"].Value = (UnitP * Convert.ToDouble(gridItemMaster.Rows[n].Cells["Quantity"].Value));
-                            }
+                        double TotalAmountProduct = Convert.ToDouble(List.UnitPrice) * Convert.ToDouble(List.Quantity);
+                        gridItemMaster.Rows.Add(List.ProductCode, List.ProductName, List.UnitPrice, List.Quantity, TotalAmountProduct);
                         }
-                    //txtBarcodeReaderBox.Clear();
-                    decimal tot = 0;
+                    else
+                        {
+                        int QtyInc = Convert.ToInt32(gridItemMaster.Rows[n].Cells["Quantity"].Value);
+                        double UnitP = Convert.ToDouble(gridItemMaster.Rows[n].Cells["UnitPrice"].Value);
+                        gridItemMaster.Rows[n].Cells["Quantity"].Value = (QtyInc + 1);  //Qty Increase by MinOrderQty....as needed...
+                        gridItemMaster.Rows[n].Cells["Total"].Value = (UnitP * Convert.ToDouble(gridItemMaster.Rows[n].Cells["Quantity"].Value));
+                        }
+                    }                
+                decimal tot = 0;
 
                     for (int i = 0; i <= gridItemMaster.RowCount - 1; i++)
                         {
@@ -521,7 +529,7 @@ namespace RetailConnectPOS.Dashboard
                     }
                 gridItemMaster.ClearSelection();
                 }
-            }
+            
 
         private void gridSKU_CellContentClick(object sender, DataGridViewCellEventArgs e)
             {

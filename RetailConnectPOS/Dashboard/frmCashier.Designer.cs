@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCashier));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.Label();
             this.btnAppClose = new System.Windows.Forms.Button();
@@ -44,6 +44,8 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.lblQuantError = new System.Windows.Forms.Label();
+            this.pbError = new System.Windows.Forms.PictureBox();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtBarcodeReaderBox = new System.Windows.Forms.TextBox();
             this.btnQuanIncrease = new System.Windows.Forms.Button();
@@ -51,6 +53,8 @@
             this.lblReso = new System.Windows.Forms.Label();
             this.panelBottom1 = new System.Windows.Forms.Panel();
             this.panelMid = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lalbelDateTime = new System.Windows.Forms.Label();
@@ -93,10 +97,6 @@
             this.lblqty = new System.Windows.Forms.Label();
             this.panelBottom2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pbError = new System.Windows.Forms.PictureBox();
-            this.lblQuantError = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnNewOrder = new RetailConnect.Classes.CurveButton();
             this.btnCancelOrder = new RetailConnect.Classes.CurveButton();
             this.btnPay = new RetailConnect.Classes.CurveButton();
@@ -114,8 +114,10 @@
             this.btnCancelItem = new RetailConnect.Classes.CurveButton();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbError)).BeginInit();
             this.panelBottom1.SuspendLayout();
             this.panelMid.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelGridShow.SuspendLayout();
@@ -128,8 +130,6 @@
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panelBottom2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbError)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -239,6 +239,29 @@
             this.panel10.Size = new System.Drawing.Size(800, 74);
             this.panel10.TabIndex = 2;
             // 
+            // lblQuantError
+            // 
+            this.lblQuantError.AutoSize = true;
+            this.lblQuantError.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantError.ForeColor = System.Drawing.Color.Red;
+            this.lblQuantError.Location = new System.Drawing.Point(175, 42);
+            this.lblQuantError.Name = "lblQuantError";
+            this.lblQuantError.Size = new System.Drawing.Size(117, 22);
+            this.lblQuantError.TabIndex = 29;
+            this.lblQuantError.Text = "lblQuantError";
+            this.lblQuantError.Visible = false;
+            // 
+            // pbError
+            // 
+            this.pbError.Image = ((System.Drawing.Image)(resources.GetObject("pbError.Image")));
+            this.pbError.Location = new System.Drawing.Point(142, 40);
+            this.pbError.Name = "pbError";
+            this.pbError.Size = new System.Drawing.Size(27, 27);
+            this.pbError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbError.TabIndex = 28;
+            this.pbError.TabStop = false;
+            this.pbError.Visible = false;
+            // 
             // txtQuantity
             // 
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -265,7 +288,7 @@
             // 
             // btnQuanIncrease
             // 
-            this.btnQuanIncrease.BackColor = System.Drawing.Color.Gold;
+            this.btnQuanIncrease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
             this.btnQuanIncrease.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuanIncrease.BackgroundImage")));
             this.btnQuanIncrease.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnQuanIncrease.FlatAppearance.BorderSize = 0;
@@ -281,7 +304,7 @@
             // 
             // btnQuantityDecrease
             // 
-            this.btnQuantityDecrease.BackColor = System.Drawing.Color.Gold;
+            this.btnQuantityDecrease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
             this.btnQuantityDecrease.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuantityDecrease.BackgroundImage")));
             this.btnQuantityDecrease.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnQuantityDecrease.FlatAppearance.BorderSize = 0;
@@ -299,7 +322,7 @@
             // 
             this.lblReso.AutoSize = true;
             this.lblReso.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReso.ForeColor = System.Drawing.Color.Black;
+            this.lblReso.ForeColor = System.Drawing.Color.White;
             this.lblReso.Location = new System.Drawing.Point(113, 2);
             this.lblReso.Name = "lblReso";
             this.lblReso.Size = new System.Drawing.Size(85, 22);
@@ -320,6 +343,7 @@
             // 
             // panelMid
             // 
+            this.panelMid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
             this.panelMid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMid.Controls.Add(this.panel3);
             this.panelMid.Controls.Add(this.label26);
@@ -328,6 +352,26 @@
             this.panelMid.Name = "panelMid";
             this.panelMid.Size = new System.Drawing.Size(336, 28);
             this.panelMid.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(148, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 26);
+            this.panel3.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(7, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 22);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Counter";
             // 
             // label26
             // 
@@ -342,6 +386,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.lalbelDateTime);
             this.panel4.Controls.Add(this.label11);
@@ -355,7 +400,7 @@
             // 
             this.lalbelDateTime.AutoSize = true;
             this.lalbelDateTime.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lalbelDateTime.ForeColor = System.Drawing.Color.Black;
+            this.lalbelDateTime.ForeColor = System.Drawing.Color.White;
             this.lalbelDateTime.Location = new System.Drawing.Point(74, 2);
             this.lalbelDateTime.Name = "lalbelDateTime";
             this.lalbelDateTime.Size = new System.Drawing.Size(128, 22);
@@ -375,6 +420,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblReso);
             this.panel2.Controls.Add(this.label2);
@@ -398,8 +444,8 @@
             // panelGridShow
             // 
             this.panelGridShow.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panelGridShow.Controls.Add(this.panelSKU);
             this.panelGridShow.Controls.Add(this.gridItemMaster);
+            this.panelGridShow.Controls.Add(this.panelSKU);
             this.panelGridShow.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelGridShow.Location = new System.Drawing.Point(0, 116);
             this.panelGridShow.Name = "panelGridShow";
@@ -431,23 +477,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridSKU.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridSKU.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Palatino Linotype", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSKU.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Palatino Linotype", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSKU.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridSKU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridSKU.EnableHeadersVisualStyles = false;
             this.gridSKU.Location = new System.Drawing.Point(7, 70);
             this.gridSKU.MultiSelect = false;
             this.gridSKU.Name = "gridSKU";
             this.gridSKU.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridSKU.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridSKU.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.gridSKU.Size = new System.Drawing.Size(786, 195);
             this.gridSKU.TabIndex = 5;
             this.gridSKU.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSKU_CellContentClick);
@@ -467,7 +513,7 @@
             // btnClr
             // 
             this.btnClr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClr.BackColor = System.Drawing.Color.Gold;
+            this.btnClr.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnClr.FlatAppearance.BorderSize = 0;
             this.btnClr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClr.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -504,7 +550,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -571,14 +617,14 @@
             this.gridItemMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridItemMaster.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.gridItemMaster.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridItemMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(233)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridItemMaster.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridItemMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridItemMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductCode,
@@ -586,31 +632,31 @@
             this.UnitPrice,
             this.Quantity,
             this.Total});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridItemMaster.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridItemMaster.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridItemMaster.EnableHeadersVisualStyles = false;
             this.gridItemMaster.Location = new System.Drawing.Point(3, 3);
             this.gridItemMaster.Name = "gridItemMaster";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridItemMaster.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ControlDark;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridItemMaster.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridItemMaster.RowHeadersVisible = false;
             this.gridItemMaster.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridItemMaster.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridItemMaster.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridItemMaster.RowTemplate.DividerHeight = 2;
             this.gridItemMaster.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.gridItemMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -860,53 +906,10 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pbError
-            // 
-            this.pbError.Image = ((System.Drawing.Image)(resources.GetObject("pbError.Image")));
-            this.pbError.Location = new System.Drawing.Point(142, 40);
-            this.pbError.Name = "pbError";
-            this.pbError.Size = new System.Drawing.Size(27, 27);
-            this.pbError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbError.TabIndex = 28;
-            this.pbError.TabStop = false;
-            this.pbError.Visible = false;
-            // 
-            // lblQuantError
-            // 
-            this.lblQuantError.AutoSize = true;
-            this.lblQuantError.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantError.ForeColor = System.Drawing.Color.Red;
-            this.lblQuantError.Location = new System.Drawing.Point(175, 42);
-            this.lblQuantError.Name = "lblQuantError";
-            this.lblQuantError.Size = new System.Drawing.Size(117, 22);
-            this.lblQuantError.TabIndex = 29;
-            this.lblQuantError.Text = "lblQuantError";
-            this.lblQuantError.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(148, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(186, 26);
-            this.panel3.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(7, 2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 22);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Counter";
-            // 
             // btnNewOrder
             // 
             this.btnNewOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewOrder.BackColor = System.Drawing.Color.Gold;
+            this.btnNewOrder.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnNewOrder.FlatAppearance.BorderSize = 0;
             this.btnNewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNewOrder.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -924,7 +927,7 @@
             // btnCancelOrder
             // 
             this.btnCancelOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelOrder.BackColor = System.Drawing.Color.Gold;
+            this.btnCancelOrder.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCancelOrder.FlatAppearance.BorderSize = 0;
             this.btnCancelOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelOrder.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -941,7 +944,7 @@
             // btnPay
             // 
             this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPay.BackColor = System.Drawing.Color.Gold;
+            this.btnPay.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnPay.FlatAppearance.BorderSize = 0;
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -957,7 +960,7 @@
             // 
             // btnChnagePrice
             // 
-            this.btnChnagePrice.BackColor = System.Drawing.Color.Gold;
+            this.btnChnagePrice.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnChnagePrice.FlatAppearance.BorderSize = 0;
             this.btnChnagePrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChnagePrice.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -973,7 +976,7 @@
             // 
             // btnCash
             // 
-            this.btnCash.BackColor = System.Drawing.Color.Gold;
+            this.btnCash.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCash.FlatAppearance.BorderSize = 0;
             this.btnCash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCash.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -989,7 +992,7 @@
             // 
             // btnReprintInvoice
             // 
-            this.btnReprintInvoice.BackColor = System.Drawing.Color.Gold;
+            this.btnReprintInvoice.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnReprintInvoice.FlatAppearance.BorderSize = 0;
             this.btnReprintInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReprintInvoice.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1005,7 +1008,7 @@
             // 
             // btnCreditSales
             // 
-            this.btnCreditSales.BackColor = System.Drawing.Color.Gold;
+            this.btnCreditSales.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCreditSales.FlatAppearance.BorderSize = 0;
             this.btnCreditSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreditSales.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1021,7 +1024,7 @@
             // 
             // btnPWP
             // 
-            this.btnPWP.BackColor = System.Drawing.Color.Gold;
+            this.btnPWP.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnPWP.FlatAppearance.BorderSize = 0;
             this.btnPWP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPWP.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1037,7 +1040,7 @@
             // 
             // btnCheckPrice
             // 
-            this.btnCheckPrice.BackColor = System.Drawing.Color.Gold;
+            this.btnCheckPrice.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCheckPrice.FlatAppearance.BorderSize = 0;
             this.btnCheckPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCheckPrice.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1053,7 +1056,7 @@
             // 
             // btnPOSReport
             // 
-            this.btnPOSReport.BackColor = System.Drawing.Color.Gold;
+            this.btnPOSReport.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnPOSReport.FlatAppearance.BorderSize = 0;
             this.btnPOSReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPOSReport.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1069,7 +1072,7 @@
             // 
             // btnOpenDrawer
             // 
-            this.btnOpenDrawer.BackColor = System.Drawing.Color.Gold;
+            this.btnOpenDrawer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnOpenDrawer.FlatAppearance.BorderSize = 0;
             this.btnOpenDrawer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpenDrawer.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1085,7 +1088,7 @@
             // 
             // btnSeekResume
             // 
-            this.btnSeekResume.BackColor = System.Drawing.Color.Gold;
+            this.btnSeekResume.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSeekResume.FlatAppearance.BorderSize = 0;
             this.btnSeekResume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeekResume.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1101,7 +1104,7 @@
             // 
             // btnSKU
             // 
-            this.btnSKU.BackColor = System.Drawing.Color.Gold;
+            this.btnSKU.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSKU.FlatAppearance.BorderSize = 0;
             this.btnSKU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSKU.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1117,7 +1120,7 @@
             // 
             // btnSalesReturn
             // 
-            this.btnSalesReturn.BackColor = System.Drawing.Color.Gold;
+            this.btnSalesReturn.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnSalesReturn.FlatAppearance.BorderSize = 0;
             this.btnSalesReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalesReturn.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1134,7 +1137,7 @@
             // btnCancelItem
             // 
             this.btnCancelItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCancelItem.BackColor = System.Drawing.Color.Gold;
+            this.btnCancelItem.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCancelItem.FlatAppearance.BorderSize = 0;
             this.btnCancelItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelItem.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1170,9 +1173,12 @@
             this.panel1.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbError)).EndInit();
             this.panelBottom1.ResumeLayout(false);
             this.panelMid.ResumeLayout(false);
             this.panelMid.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1191,9 +1197,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panelBottom2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbError)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
