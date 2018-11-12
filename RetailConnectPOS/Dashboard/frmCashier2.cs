@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RetailConnectPOS.Tab
-{
-    public partial class frmPassword : Form
+namespace RetailConnectPOS.Dashboard
     {
-        public frmPassword()
+    public partial class frmCashier2 : Form
         {
+        public frmCashier2()
+            {
             InitializeComponent();
-        }
-
-        private void frmPassword_Load(object sender, EventArgs e)
-        {
-
+            }
         }
     }
-}

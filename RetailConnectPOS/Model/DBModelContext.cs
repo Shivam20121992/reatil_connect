@@ -191,5 +191,10 @@ namespace RetailConnectPOS.Model
                 .Property(e => e.XYSET)
                 .IsUnicode(false);
         }
-    }
+
+        internal void AddTosales(SALE sALE)
+            {
+            throw new NotImplementedException();
+            }
+        }
 }
